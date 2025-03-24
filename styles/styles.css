@@ -1,0 +1,47 @@
+body{
+
+    background:#1d1f21;
+    text-align: center;
+    
+}
+
+.corPrimaria{
+    margin: 4rem;
+    height: 17em;
+    background-color: #eef1ee;
+    border-radius: 30px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color:#f14e32;
+    
+}
+
+.corSecundaria{
+    height: 20em;
+    width: 16em;
+    background-color: #9b6666;
+    border-radius: 30px;
+    
+}
+
+.resposta{
+    color:greenyellow;
+}
+
+
+h1{
+    padding: 1rem;
+}
+
+input{
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+button{
+    border-radius: 30px;
+
+
+}
