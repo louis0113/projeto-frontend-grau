@@ -6,29 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 
-    <style>
-        /* Adiciona um container para organizar os blocos lado a lado */
-        .container {
-            display: flex; /* Define o layout flexível */
-            flex-wrap: wrap; /* Permite que os blocos quebrem linha se não couberem */
-            gap: 20px; /* Espaçamento entre os blocos */
-            justify-content: center; /* Centraliza os blocos */
-            align-items: flex-start; /* Mantém os blocos alinhados ao topo */
-        }
-
-        /* Ajusta os blocos para ficarem lado a lado */
-        .corSecundaria {
-            flex: 1; /* Faz os blocos se ajustarem ao espaço disponível */
-            min-width: 280px; /* Define um tamanho mínimo para cada bloco */
-            max-width: 300px; /* Define um tamanho máximo para cada bloco */
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- Novo container para organizar os blocos lado a lado -->
-    <div class="container"> 
+    <div class="container">
 
         <div class="corSecundaria">
             <div class="corPrimaria">
@@ -84,7 +66,7 @@
                     <input type="number" id="numC" placeholder="Digite o terceiro valor" required><br><br>
                     <button type="button" onclick="algoMaior()">Enviar</button>
                 </form>
-                <p id="resultMaior" class="resposta"></p>
+                <p id="resultMaior"></p>
             </div>
         </div>
 
@@ -148,9 +130,10 @@
             </div>
         </div>
 
-    </div> <!-- Fechamento do container -->
+    </div>
 
     <script src="../assets/script.js"></script>
 
 </body>
+
 </html>
