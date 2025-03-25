@@ -2,18 +2,22 @@ body{
 
     background:#1d1f21;
     text-align: center;
-    
+    cursor: url('../assets/cursor.png') 16 16, auto;
+    border-radius: 30px;
 }
 
 .corPrimaria{
-    margin: 4rem;
+    margin-top: 2%;
+    margin-left: 40%;
     height: 17em;
     background-color: #eef1ee;
-    border-radius: 30px;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
     color:#f14e32;
+
+    flex-direction: column;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
     
 }
 
@@ -21,12 +25,22 @@ body{
     height: 20em;
     width: 16em;
     background-color: #9b6666;
-    border-radius: 30px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
     
 }
 
+.corSecundaria:hover{
+
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
 .resposta{
-    color:greenyellow;
+    color: rgb(205, 248, 12);   
 }
 
 
@@ -35,13 +49,6 @@ h1{
 }
 
 input{
-    border-radius: 30px;
     text-align: center;
-
-}
-
-button{
-    border-radius: 30px;
-
 
 }
