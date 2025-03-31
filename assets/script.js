@@ -43,10 +43,14 @@ function algoFib() {
         document.getElementById("resultFib").textContent = "Dado inválido.";
         return;
     }
+    
     if (n <= 0) {
         document.getElementById("resultFib").textContent = "Por favor, insira um número positivo.";
         return;
-    }
+    } else if (n >= 18){
+	document.getElementById("resultFib").innerHTML = "<p>O número é maior que desejado <br>Coloque um número entre 1 e 17!</p>";
+
+    } else {
 
     let fibonacci = [0, 1]; 
 
@@ -54,7 +58,9 @@ function algoFib() {
         fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
     }
 
-    document.getElementById("resultFib").textContent = fibonacci.slice(0, n);
+	document.getElementById("resultFib").textContent = fibonacci.slice(0, n);
+
+    }
 }
 
 // Imposto
