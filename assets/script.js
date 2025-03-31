@@ -13,18 +13,24 @@ function algoArea() {
 
 // Fatorial
 function algoFat() {
-    const number = parseInt(document.getElementById("numFat").value);
+    const numInput = document.getElementById("numFat").value;
+    const number = parseInt(numInput);
 
-    
+    if (!numInput || isNaN(number)) {
+        document.getElementById("resultFat").textContent = "Dado Inválido";
+        return;
+   }
+
     if (number < 0) {
         document.getElementById("resultFat").textContent = "O fatorial não está definido para números negativos.";
         return;
     }
 
     let factorial = 1;
+
     for (let i = 2; i <= number; i++) {
         factorial *= i;
-    }
+     }
 
     document.getElementById("resultFat").textContent = "O fatorial de " + number + " é: " + factorial;
 }
