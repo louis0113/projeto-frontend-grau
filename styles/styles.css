@@ -19,11 +19,11 @@ body {
     flex-wrap: wrap;
 }
 
-.corPrimariaRetangulo {
+.corPrimaria {
 
     margin-top: 2%;
     margin-left: 40%;
-    height: 17em;
+    height: 18em;
    
     background-color: #eef1ee;
     max-width: 50em;
@@ -36,8 +36,8 @@ body {
 
 }
 
-.corSecundariaRetangulo {
-    height: 20em;
+.corSecundaria {
+    height: 22em;
     margin-top: 10%;
     width: 16em;
     border-radius: 30px;
@@ -52,313 +52,7 @@ body {
 }
 
 
-
-.corPrimariaFatorial {
-
-      margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-.corSecundariaFatorial {
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaFibonacci {
-
-      margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-
-
-.corSecundariaFibonacci{
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaImposto {
-
-      margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-
-
-.corSecundariaImposto{
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaValor {
-
-    margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-
-
-.corSecundariaValor {
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaMedia {
-
-      margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-
-
-.corSecundariaMedia{
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaPrimo {
-
-      margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-
-
-.corSecundariaPrimo{
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaOrd {
-
-      margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-
-
-.corSecundariaOrd{
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaPar {
-
-      margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;
-   
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-
-
-}
-
-
-
-.corSecundariaPar{
-     height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -30px;
-}
-
-.corPrimariaTabuada {
-
-     margin-top: 2%;
-    margin-left: 40%;
-    height: 17em;  
-    background-color: #eef1ee;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f14e32;
-    border-radius: 30px;
-    flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
-    
-
-}
-
-
-
-.corSecundariaTabuada{
-    height: 20em;
-    margin-top: 10%;
-    width: 16em;
-    border-radius: 30px;
-    background-color: #9b6666;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.116);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
-    flex: 1;
-    min-width: 350px;
-    max-width: 300px;
-    padding-top: -2em;
-    
-}
-
-button {
-
+button{
     padding: 0.8em 1.8em;
     border: 2px solid #9b6666;
     position: relative;
@@ -372,6 +66,17 @@ button {
     font-family: inherit;
     color: #9b6666;
     border-radius: 30px;
+}
+
+.button1Input {
+
+    margin-top: 5em;
+    
+}
+
+.button2Input{
+
+    margin-top: 2.60em;
 }
 
 button::before {
@@ -399,43 +104,15 @@ button:hover {
 
 }
 
-.respostaValor {
-
-    margin-top: 1.25em;
-    color: white;
-
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: #222e2c;
 
 }
 
-.respostaMedia {
 
-    margin-top: 1.25em;
-    color: white;
-
-
-}
-
-.respostaOrd {
-
-    margin-top: 1.25em;
-    color: white;
-
-
-}
-
-.respostaFibonacci {
-
-    margin-top: 6em;
-    color: white;
-
-
-}
-
-.respostaRetangulo {
-
-    margin-top: 3.80em;
-    color: white;
-
+.resposta{
+    margin-top: 2.50em;
 
 }
 
@@ -447,11 +124,19 @@ button:hover {
 
 }
 
-.resposta {
-    margin-top: 4.25em;
-    color: white;
-}
 
+
+.respostaTabuada {
+    
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2.50em;
+    width: 15em;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    margin-left: 15%;
+}
 
 h1 {
     margin-top: -7.2px;
@@ -462,14 +147,26 @@ h1 {
 }
 
 
-p {
-    font-family: ESPACION;
-
-}
-
 input {
 
     text-align: center;
     border-radius: 60px;
 
 }
+
+/* From Uiverse.io by cohencoo */ 
+.input {
+    border-radius: 10px;
+    outline: 2px solid #9b6666;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+  }
+  
+  .input:focus {
+    outline-offset: 5px;
+   
+  }
