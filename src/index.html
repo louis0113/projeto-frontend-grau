@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
-    
+    <link href="favicon.ico" rel="shortcut" icon="" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,11 +18,12 @@
 
         <div class="corSecundaria">
             <div class="corPrimaria">
+
                 <h1>Área de um retângulo</h1>
                 <form id="areaForm">
                     <input type="number" id="length" placeholder="Digite a altura" required><br><br>
                     <input type="number" id="width" placeholder="Digite a largura" required><br><br>
-                    <button type="button" onclick="algoArea()">Enviar</button>
+                    <button class="button2Input" type="button" onclick="algoArea()">Enviar</button>
                 </form>
                 <p id="resultArea" class="resposta"></p>
             </div>
@@ -26,10 +31,11 @@
 
         <div class="corSecundaria">
             <div class="corPrimaria">
+
                 <h1>Calculadora de Fatorial</h1>
                 <form id="factorialForm">
                     <input type="number" id="numFat" placeholder="Digite um número" required><br><br>
-                    <button type="button" onclick="algoFat()">Enviar</button>
+                    <button class="button1Input" type="button" onclick="algoFat()">Enviar</button>
                 </form>
                 <p id="resultFat" class="resposta"></p>
             </div>
@@ -37,10 +43,11 @@
 
         <div class="corSecundaria">
             <div class="corPrimaria">
+
                 <h1>Calculadora Fibonacci</h1>
                 <form id="fibForm">
                     <input type="number" id="numFib" placeholder="Digite um número" required><br><br>
-                    <button type="button" onclick="algoFib()">Enviar</button>
+                    <button class="button1Input" type="button" onclick="algoFib()">Enviar</button>
                 </form>
                 <p id="resultFib" class="resposta"></p>
 
@@ -49,10 +56,11 @@
 
         <div class="corSecundaria">
             <div class="corPrimaria">
+
                 <h1>Calculadora de Imposto</h1>
                 <form id="impostoForm">
-                    <input type="number" id="salario" placeholder="Digite seu salário" required><br><br>
-                    <button type="button" onclick="algoImposto()">Enviar</button>
+                    <input  type="number" id="salario" placeholder="Digite seu salário" required><br><br>
+                    <button class="button1Input" type="button" onclick="algoImposto()">Enviar</button>
                 </form>
                 <p id="resultImp" class="resposta"></p>
 
@@ -61,6 +69,7 @@
 
         <div class="corSecundaria">
             <div class="corPrimaria">
+
                 <h1>Cheque de Valor</h1>
                 <form id="maiorForm">
                     <input type="number" id="numA" placeholder="Digite o primeiro valor" required><br><br>
@@ -91,7 +100,7 @@
                 <h1>Cheque de número Primo</h1>
                 <form id="primoForm">
                     <input type="number" id="primo" placeholder="Digite um valor" required><br><br>
-                    <button type="button" onclick="algoPrimo()">Enviar</button>
+                    <button  class="button1Input" type="button" onclick="algoPrimo()">Enviar</button>
                 </form>
                 <p id="resultPrimo" class="resposta"></p>
 
@@ -100,28 +109,28 @@
 
         <div class="corSecundaria">
             <div class="corPrimaria">
-                
-                <h1>Ordenação de valores</h1> 
+
+                <h1>Ordenação de valores</h1>
                 <form id="ordeForm">
                     <input type="number" id="ordA" placeholder="Digite o primeiro valor" required><br><br>
                     <input type="number" id="ordB" placeholder="Digite o segundo valor" required><br><br>
                     <input type="number" id="ordC" placeholder="Digite o terceiro valor" required><br><br>
                     <button type="button" onclick="algoOrde()">Enviar</button>
                 </form>
-                <p id="resultOrde" class="resposta"></p>
-                <p id="resultOrde1" class="resposta"></p>
+                <div class="resposta">
+                <p id="resultOrde1"> </p>
+            </div>
 
-                
             </div>
         </div>
 
         <div class="corSecundaria">
             <div class="corPrimaria">
-                
+
                 <h1>Cheque de Par ou Ímpar</h1>
                 <form id="parForm">
-                    <input type="number" id="numPar" placeholder="Digite um valor" required><br><br>
-                    <button type="button" onclick="algoPar()">Enviar</button>
+                    <input class="input" type="number" id="numPar" placeholder="Digite um valor" required><br><br>
+                    <button class="button1Input" type="button" onclick="algoPar()">Enviar</button>
                 </form>
                 <p id="resultPar" class="resposta"></p>
 
@@ -130,20 +139,36 @@
 
         <div class="corSecundaria">
             <div class="corPrimaria">
-                
+
                 <h1>Tabuada</h1>
                 <form id="tabForm">
                     <input type="number" id="tabuada" placeholder="Digite um valor" required><br><br>
-                    <button type="button" onclick="algoTab()">Enviar</button>
-            
+                    <button class="button1Input" type="button" onclick="algoTab()">Enviar</button>
+
                 </form>
-                <p id="resultTab" class="resposta"></p>
+                <div id="resultTab" class="respostaTabuada">
+
+
+
+		</div>
+
+        <div id="respostaTabuadaSub">
+
+
+        </div>
+        <div id="respostaTabuadaMult">
+
+
+        </div>
+        <div id="respostaTabuadaDiv">
 
             
+        </div>
+
             </div>
         </div>
 
-    </div> 
+    </div>
 
     <script src="../assets/script.js"></script>
 

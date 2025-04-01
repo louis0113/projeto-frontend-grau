@@ -184,7 +184,7 @@ function algoOrde() {
   
     let descending = [...num].sort((x, y) => y - x);
   
-    document.getElementById("resultOrde").textContent = `Números em ordem decrescente: ${descending[0]}, ${descending[1]}, ${descending[2]}.`;
+    //document.getElementById("resultOrde").textContent = `Números em ordem decrescente: ${descending[0]}, ${descending[1]}, ${descending[2]}.`;
     document.getElementById("resultOrde1").textContent = `Números em ordem crescente: ${descending[2]}, ${descending[1]}, ${descending[0]}.`;
 }
 
@@ -215,9 +215,7 @@ function algoTab() {
 
     function operacao(sinal) {
       result.innerHTML += `
-        <hr>
         <b>${sinal}</b><br>
-        <hr>
       `;
     }
 
@@ -234,7 +232,9 @@ function algoTab() {
 
       for (let x = 1; x <= 10; x++) {
         if (y === 1) {
-          result.innerHTML += `${tabuada} + ${x} = ${tabuada + x}<br>`;
+          result.innerHTML += `<div style="color:black;" id="respostaTabuadaSub">
+
+          ${tabuada} + ${x} = ${tabuada + x}<br></div>`;
         } else if (y === 2) {
           result.innerHTML += `${tabuada} - ${x} = ${tabuada - x}<br>`;
         } else if (y === 3) {
@@ -243,7 +243,7 @@ function algoTab() {
           result.innerHTML += `${tabuada} / ${x} = ${Math.round(tabuada / x * 100) / 100}<br>`;
         }
       }
-      result.innerHTML += "<hr>";
+      
     }
   }
 
