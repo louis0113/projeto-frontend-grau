@@ -7,11 +7,14 @@ body {
     -webkit-user-select: none; 
     -moz-user-select: none; 
     -ms-user-select: none; 
+    
 
 }
 
 .container {
 
+    margin-top: 2%; /* Coloquei pra nao deixar a margem no topo grudando com o navegador*/
+    
     display: flex;
     gap: 35px;
     justify-content: center;
@@ -21,6 +24,7 @@ body {
 
 .corPrimaria {
 
+    
     margin-top: 2%;
     margin-left: 40%;
     height: 18em;
@@ -32,13 +36,16 @@ body {
     color: #f14e32;
     border-radius: 30px;
     flex-direction: column;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.116);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
 
 }
 
 .corSecundaria {
+    
     height: 22em;
-    margin-top: 10%;
+
+    /* Apagando a o margin-top: 10%; que tinha aqui, ele centralizou tranquilo, mas cortou a parte de cima dos cards, dai fui no .container e apaguei a margin-top: -8%; que tinha colocado e ele arrumou*/
+    
     width: 16em;
     border-radius: 30px;
     background-color: #9b6666;
@@ -135,8 +142,8 @@ p{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 2.50em;
     width: 15em;
-    background-color: #555;
-    color: #fff;
+    background-color: #9b6666;
+    color: #222e2c;
     text-align: center;
     z-index: 1;
     margin-left: 15%;
@@ -177,3 +184,36 @@ input {
     outline-offset: 5px;
    
   }
+  
+/* Aqui começa os codigos do menu*/
+
+  .menu-central {
+   
+    display:flexbox;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    position: relative; /* Garante que fique no layout */
+    width: 100%; /* Ocupa toda a largura */
+    margin: 10px auto; /* Reduz a margem externa */
+    padding: 5px; /* Diminui o espaçamento interno */
+}
+
+.menu-central a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px; /* Reduz o tamanho dos botões */
+    background-color: #a56a64; /* Cor do fundo */
+    border-radius: 23px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #a56a64; /* Efeito de brilho */
+    
+}
+
+.menu-central a:hover {
+    background-color: #874d47; /* Cor ao passar o mouse */
+}
+
