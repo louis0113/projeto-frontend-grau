@@ -2,7 +2,7 @@ body {
 
     background: #1d1f21;
     text-align: center;
-    cursor: url('../assets/cursor.png') 16 16, auto;
+    cursor: url('../assets/cursorw.png') 16 16, auto;
     user-select: none; 
     -webkit-user-select: none; 
     -moz-user-select: none; 
@@ -83,6 +83,7 @@ button{
 
 button::before {
 
+    cursor: url('../assets/cursor1.png') 16 16, auto;
     content: '';
     width: 0;
     height: 300%;
@@ -97,11 +98,12 @@ button::before {
 }
 
 button:hover::before {
+    
     width: 105%;
 }
 
 button:hover {
-
+    cursor: url('../assets/cursor1.png') 16 16, auto;
     color: white;
 
 }
@@ -158,6 +160,7 @@ input {
 
 /* From Uiverse.io by cohencoo */ 
 .input {
+    cursor: url('../assets/cursor1.png') 16 16, auto;
     position: relative;
     top: -15px;
     border-radius: 5px;
