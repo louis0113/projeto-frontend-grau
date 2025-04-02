@@ -7,7 +7,7 @@ function algoArea() {
         const area = a * b;
         document.getElementById("resultArea").textContent = "Área do Retângulo: " + area;
     } else {
-        document.getElementById("resultArea").textContent = "Data invalida.";
+        document.getElementById("resultArea").textContent = "Dados inválidos.";
     }
 }
 
@@ -17,7 +17,7 @@ function algoFat() {
     const number = parseInt(numInput);
 
     if (!numInput || isNaN(number)) {
-        document.getElementById("resultFat").textContent = "Dado Inválido";
+        document.getElementById("resultFat").textContent = "Dados Inválidos";
         return;
    }
 
@@ -40,7 +40,7 @@ function algoFib() {
     const n = parseInt(document.getElementById("numFib").value);
 
     if (isNaN(n)) {
-        document.getElementById("resultFib").textContent = "Dado inválido.";
+        document.getElementById("resultFib").textContent = "Dados inválidos.";
         return;
     }
     
@@ -176,8 +176,8 @@ function algoOrde() {
     const c = parseFloat(document.getElementById("ordC").value);
 
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
-        document.getElementById("resultOrde").textContent = "Dados inválidos.";
-        document.getElementById("resultOrde1").textContent = "";
+        document.getElementById("resultOrde1").textContent = "Dados inválidos.";
+    //     document.getElementById("resultOrde1").textContent = "";
         return;
     }
     let num = [a, b, c];
