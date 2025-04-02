@@ -7,7 +7,7 @@ function algoArea() {
         const area = a * b;
         document.getElementById("resultArea").textContent = "Área do Retângulo: " + area;
     } else {
-        document.getElementById("resultArea").textContent = "Data invalida.";
+        document.getElementById("resultArea").textContent = "Dados inválidos.";
     }
 }
 
@@ -17,7 +17,7 @@ function algoFat() {
     const number = parseInt(numInput);
 
     if (!numInput || isNaN(number)) {
-        document.getElementById("resultFat").textContent = "Dado Inválido";
+        document.getElementById("resultFat").textContent = "Dados Inválidos";
         return;
    }
 
@@ -40,7 +40,7 @@ function algoFib() {
     const n = parseInt(document.getElementById("numFib").value);
 
     if (isNaN(n)) {
-        document.getElementById("resultFib").textContent = "Dado inválido.";
+        document.getElementById("resultFib").textContent = "Dados inválidos.";
         return;
     }
     
@@ -176,15 +176,15 @@ function algoOrde() {
     const c = parseFloat(document.getElementById("ordC").value);
 
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
-        document.getElementById("resultOrde").textContent = "Dados inválidos.";
-        document.getElementById("resultOrde1").textContent = "";
+        document.getElementById("resultOrde1").textContent = "Dados inválidos.";
+    //     document.getElementById("resultOrde1").textContent = "";
         return;
     }
     let num = [a, b, c];
   
     let descending = [...num].sort((x, y) => y - x);
   
-    document.getElementById("resultOrde").textContent = `Números em ordem decrescente: ${descending[0]}, ${descending[1]}, ${descending[2]}.`;
+    //document.getElementById("resultOrde").textContent = `Números em ordem decrescente: ${descending[0]}, ${descending[1]}, ${descending[2]}.`;
     document.getElementById("resultOrde1").textContent = `Números em ordem crescente: ${descending[2]}, ${descending[1]}, ${descending[0]}.`;
 }
 
@@ -215,9 +215,7 @@ function algoTab() {
 
     function operacao(sinal) {
       result.innerHTML += `
-        <hr>
         <b>${sinal}</b><br>
-        <hr>
       `;
     }
 
@@ -234,7 +232,9 @@ function algoTab() {
 
       for (let x = 1; x <= 10; x++) {
         if (y === 1) {
-          result.innerHTML += `${tabuada} + ${x} = ${tabuada + x}<br>`;
+          result.innerHTML += `<div style="color:black;" id="respostaTabuadaSub">
+
+          ${tabuada} + ${x} = ${tabuada + x}<br></div>`;
         } else if (y === 2) {
           result.innerHTML += `${tabuada} - ${x} = ${tabuada - x}<br>`;
         } else if (y === 3) {
@@ -243,7 +243,7 @@ function algoTab() {
           result.innerHTML += `${tabuada} / ${x} = ${Math.round(tabuada / x * 100) / 100}<br>`;
         }
       }
-      result.innerHTML += "<hr>";
+      
     }
   }
 
