@@ -232,7 +232,7 @@ function algoTab() {
 
       for (let x = 1; x <= 10; x++) {
         if (y === 1) {
-          result.innerHTML += `<div style="color:black;" id="respostaTabuadaSub">
+          result.innerHTML += `<div style="color:with;" id="respostaTabuadaSub">
 
           ${tabuada} + ${x} = ${tabuada + x}<br></div>`;
         } else if (y === 2) {
@@ -245,5 +245,7 @@ function algoTab() {
       }
       
     }
+
+    
   }
 
