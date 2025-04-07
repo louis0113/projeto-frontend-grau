@@ -207,7 +207,7 @@ function algoPar() {
   
 // Tabuada
 // Tive que usar innerHTML ao inves de textContent aqui. Espero que isso não cause problemas.
-function algoTab() {
+/* function algoTab() {
     const tabuada = document.getElementById("tabuada").value;
     const result = document.getElementById("resultTab");
 
@@ -232,7 +232,7 @@ function algoTab() {
 
       for (let x = 1; x <= 10; x++) {
         if (y === 1) {
-          result.innerHTML += `<div style="color:with;" id="respostaTabuadaSub">
+          result.innerHTML += `<div id="respostaTabuadaSub">
 
           ${tabuada} + ${x} = ${tabuada + x}<br></div>`;
         } else if (y === 2) {
@@ -245,7 +245,60 @@ function algoTab() {
       }
       
     }
+    
+  } */
 
     
-  }
-
+    function tabAdd() {
+      const tabuada = Number(document.getElementById("tabuada").value);
+      const result = document.getElementById("tabAdd");
+  
+  
+      result.innerHTML = "";
+      for (let x = 1; x <= 10; x++) {
+        
+         result.innerHTML += `${tabuada} + ${x} = ${tabuada + x} <br>`
+        }
+        
+    }
+  
+    function tabSub() {
+      const tabuada = Number(document.getElementById("tabuada").value);
+      const result = document.getElementById("tabSub");
+  
+  
+      result.innerHTML = "";
+      for (let x = 1; x <= 10; x++) {
+        
+         result.innerHTML += `${tabuada} - ${x} = ${tabuada - x} <br>`
+        }
+        
+    }
+    
+    function tabMul() {
+      const tabuada = Number(document.getElementById("tabuada").value);
+      const result = document.getElementById("tabMul");
+  
+  
+      result.innerHTML = "";
+      for (let x = 1; x <= 10; x++) {
+        
+         result.innerHTML += `${tabuada} * ${x} = ${tabuada * x} <br>`
+        }
+        
+    }
+  
+    function tabDiv() {
+      const tabuada = Number(document.getElementById("tabuada").value);
+      const result = document.getElementById("tabDiv");
+  
+  
+      result.innerHTML = "";
+      for (let x = 1; x <= 10; x++) {
+        
+         result.innerHTML += `${tabuada} / ${x} = ${tabuada / x} <br>`
+        }
+        
+    }
+  
+  
