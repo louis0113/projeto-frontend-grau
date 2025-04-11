@@ -8,7 +8,7 @@
     <title>Sobre</title>
     <style>
         body {
-            background-color: black;
+            background-color: #1d1f21;
             color: whitesmoke;
             margin: 300px;
             margin-top: 2%;
@@ -16,98 +16,197 @@
             font-family: 'Courier New', Courier, monospace;
             margin-left: 10rem;
         }
+
+	h1,h2{
+	    text-align: center;
+	    font-family: Impact;
+	    margin-top: 10%;
+	}
+
+	p{
+	    text-align: center;
+	}
+
+	section{
+	    background-color: #eef1ee;
+	    border-radius: 1.5rem;
+	    max-width: 40rem;
+	    min-width: 35rem;
+	    color:  #f14e32;
+	    text-align: justify;
+	    margin: auto;
+	   
+	    
+	}
+
+	section:hover{
+	    background-color:#f14e32;
+	    color: black;
+	    
+
+	}
     </style>
 </head>
 
 <body>
 
-    <p><span> 🧮 Projeto Tabuada - Operações<p></span>
+  <main>
 
-        <br>
-
-    <p><span>Bem-vindo ao Projeto Tabuada!<p></span>
-
-        <br>
-
-    <p><span> Este site foi desenvolvido como parte de um desafio na disciplina de Lógica de Programação, no curso de
-            Análise e Desenvolvimento de Sistemas da Instituição Gráu Técnico.<p></span>
-
-    <p><span>A ideia começou no Visualg (usando Portugol), mas depois migrou para PHP, onde ganhou mais possibilidades e
-            um toque de desenvolvimento web!<p></span>
-
-        <br>
-
-    <p><span>📌 Objetivo<p></span>
-
-            <p><span>Facilitar a consulta da tabuada de qualquer número informado pelo usuário.<p></span>
-            <p><span>O sistema exibe automaticamente as tabuadas de:<p></span>
-
-            <p><span> ➕ Adição <p></span>
-
-            <p><span> ➖ Subtração <p></span>
-
-            <p><span>✖️ Multiplicação <p></span>
-
-            <p><span>➗ Divisão <p></span>
-
-                <br>
-
-            <p><span>👥 Público-alvo <p></span>
-            <p><span>Estudantes e curiosos que querem aprender ou revisar a tabuada de forma rápida, didática e acessível.<p></span>
-
-                <br>
-
-            <p><span>⚙️ Funcionalidades <p></span>
-            <p><span> Input do usuário com verificação (mensagem se o campo estiver vazio) <p></span>
-
-            <p><span>Geração das quatro tabuadas (adição, subtração, multiplicação e divisão)<p></span>
-
-            <p><span></span>Design minimalista (tema escuro, texto claro)
-            <p>
-        </span>
-
-    <p><span></span> Interface simples e intuitiva<p></span>
-    <p><span></span>Código dividido em HTML, CSS e JS<p></span>
-
-        <br>
-
-    <p><span></span>🧱 Tecnologias Utilizadas
-    <p></span>
-    <p><span>HTML & CSS (front-end simples e funcional)<p></span>
-
-    <p><span>PHP (backend com loops, condicionais e funções)<p></span>
-    <p><span>Arquitetura Cliente-Servidor<p></span>
-
-    <p><span>Método GET para captura de dados<p></span>
-
-        <br>
-
-    <p><span>💻 Exemplo de Uso<p></span>
-    <p><span>O usuário acessa o site, digita um número e clica no botão. O sistema mostra a tabuada completa com
-            formatação organizada e de fácil leitura.<p></span>
-
-        <br>
-
-    <p><span>📁 Outros Projetos em PHP incluídos<p></span>
-    <p><span>Além da Tabuada, o repositório conta com scripts de lógica como:<p></span>
-
-    <p><span> ◉ Área de um retângulo<p></span>
-
-    <p><span> ◉ Calculadora Fatorial<p></span>
-
-    <p><span> ◉ Calculadora Fibonacci<p></span>
+    <h1>🧮 Projeto Operações Matemáticas</h1>
     
-    <p><span> ◉ Cheque de valor<p></span>
+    <section>
+
+      <h2>Bem-vindo ao Projeto das Operações Matemáticas :)</h2>
+
+      <p>
+O site foi desenvolvido como parte de um desafio na disciplina de Lógica de Programação, no curso de Análise e Desenvolvimento de Sistemas da Instituição Gráu Técnico.
+      </p>
+           
+      <p>
+A ideia começou no Visualg (usando <strong>Portugol</strong>), mas depois migrou para PHP, onde ganhou mais possibilidades e um toque de desenvolvimento web!
+      </p>
+
+    </section>
     
-    <p><span> ◉ Cálculadora média<p></span>
+    <section>
 
-    <p><span> ◉ Cheque de número primo<p></span>
+      <h2>📌 Objetivo</h2>
 
-    <p><span> ◉ Ordenação de valores<p></span>
+      <p>
+Facilitar a consulta da tabuada de qualquer número informado pelo usuário.  O sistema exibe automaticamente as tabuadas de:
+      </p>
+      
+      <ul>
+	<li>➕ Adição</li> 
+        <li>➖ Subtração</li>
+        <li>✖️ Multiplicação</li> 
+        <li>➗ Divisão</li>
+      </ul>
+             
+    </section>
+    
+    <section>
+      
+      <h2>👥 Público-alvo</h2>
+      
+      <p>
+Estudantes e curiosos que querem aprender ou revisar a tabuada de forma rápida, didática e acessível.
+      </p>
 
-    <p><span> ◉ Cheque de par ou Ímpar<p></span>
+    </section>
 
-    <p><span> ◉ Tabuada<p></span>
+    <section>
+
+      <h2>⚙️ Funcionalidades</h2> 
+
+      <ul>
+	<li>Input do usuário com verificação (mensagem se o campo estiver vazio)</li>
+	<li> Geração das quatro tabuadas (adição, subtração, multiplicação e divisão)</li>
+	<li>Design minimalista (tema escuro, texto claro)</li>
+	<li>Interface simples e intuitiva</li>
+	<li>Código dividido em HTML, CSS e JS</li>
+      </ul>
+      
+    </section>
+
+    <section>
+
+      <h2>🧱 Tecnologias Utilizadas</h2>
+
+      <ul>
+	<li>HTML & CSS (front-end simples e funcional)</li>
+	<li>Javascript (backend com loops, condicionais e funções)</li>
+	<li>Arquitetura Cliente-Servidor</li>
+	<li>Várias páginas HTML com problemas matemáticos divididos por categorias</li>
+      </ul>
+      
+    </section>
+    
+    <section>
+
+      <h2>💻 Exemplo de Uso</h2>
+
+      <p>O usuário acessa o site, digita um número e clica no botão. O sistema mostra a tabuada completa com formatação organizada e de fácil leitura.</p>
+      
+    </section>
+    
+    <section>
+
+      <h2>📁 Outros Projetos em PHP incluídos</h2>
+
+      <p>Além da Tabuada, o repositório conta com scripts de lógica como:</p>
+
+      <ul>
+	
+	<li>Aritmética
+	  <ul>
+	    <li> Tabuada
+	      <ul>
+		<li>Adição</li>
+		<li>Subtração</li>
+		<li>Multiplicação</li>
+		<li>Divisão</li>
+	      </ul>
+	   </li>
+	  </ul>
+	</li>
+	
+	<li>Geometria Plana
+
+
+
+	</li>
+	
+	<li> Geometria Tridimensional 
+
+
+	</li>
+	
+	<li> Álgebra
+
+
+	</li>
+	
+	<li> Matemática Financeira
+
+
+	</li>
+      </ul>
+      
+    </section>
+
+  </main>
+
+  
+  
+    
+
+
+
+    
+ 
+
+
+    
+   
+
+    ◉ Área de um retângulo
+
+    ◉ Calculadora Fatorial
+
+    ◉ Calculadora Fibonacci
+    
+    ◉ Cheque de valor
+    
+    ◉ Cálculadora média
+
+    ◉ Cheque de número primo
+
+    ◉ Ordenação de valores
+
+    ◉ Cheque de par ou Ímpar
+
+    ◉ Tabuada
 
 </body>
 
