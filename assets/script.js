@@ -1,5 +1,55 @@
+
+document.querySelectorAll("input[type='number']").forEach(input => {
+    input.addEventListener("keypress", function (e) {
+        const char = String.fromCharCode(e.which);
+        const regex = /[0-9.-]/
+        if (!regex.test(char)) {
+            e.preventDefault();
+        }
+    });
+});
+
+
+document.querySelectorAll("form").forEach(form => {
+    form.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            const button = form.querySelector("button[type='button']");
+            if (button) button.click();
+        }
+    });
+});
+
+function mostrarTabuada() {
+    const valor = document.getElementById("tabuada").value;
+
+    if (valor === '' || isNaN(valor)) {
+        document.querySelectorAll('.respostaTabuada').forEach(div => {
+            div.style.display = 'none';
+        });
+        return;
+    }
+
+    tabAdd();
+    tabSub();
+    tabMul();
+    tabDiv();
+
+    document.querySelectorAll('.respostaTabuada').forEach(div => {
+        div.style.display = 'block';
+    });
+}
+
+window.onload = function () {
+    document.querySelectorAll('.respostaTabuada').forEach(div => {
+        div.style.display = 'none';
+    });
+};
+
+
 // Area
 function algoArea() {
+       
     const a = document.getElementById("length").value;
     const b = document.getElementById("width").value;
 
@@ -11,11 +61,13 @@ function algoArea() {
     }
 }
 
+
 // Fatorial
 function algoFat() {
+       
     const numInput = document.getElementById("numFat").value;
     const number = parseInt(numInput);
-
+    
     if (!numInput || isNaN(number)) {
         document.getElementById("resultFat").textContent = "Dados Inválidos";
         return;
@@ -63,6 +115,7 @@ function algoFib() {
     }
 }
 
+
 // Imposto
 function algoImposto() {
     const n = parseFloat(document.getElementById("salario").value);
@@ -96,6 +149,8 @@ function algoImposto() {
 
 }
 
+
+
 // Maior
 function algoMaior() {
     const a = parseFloat(document.getElementById("numA").value);
@@ -126,8 +181,6 @@ function algoMaior() {
 
     document.getElementById("resultMaior").textContent = `O maior número é ${maior} e o menor é ${menor}.`;
 }
-
-
 
 // Media
 function algoMedia() {
@@ -187,6 +240,7 @@ function algoOrde() {
     document.getElementById("resultOrde1").textContent = `Números em ordem crescente: ${descending[2]}, ${descending[1]}, ${descending[0]}.`;
 }
 
+
 // Par
 function algoPar() {
     const n = document.getElementById("numPar").value;
@@ -202,8 +256,8 @@ function algoPar() {
     } else {
       document.getElementById("resultPar").textContent = `O número ${i} é impar`;
     }
-  }
-    
+}
+
     function tabAdd() {
       const tabuada = Number(document.getElementById("tabuada").value);
       const result = document.getElementById("tabAdd");
@@ -212,7 +266,7 @@ function algoPar() {
 	result.innerHTML = "<h3>ADIÇÃO</h3>";
       for (let x = 1; x <= 10; x++) {
         
-         result.innerHTML += `${tabuada} + ${x} = ${tabuada + x} <br>`
+          result.innerHTML += `${tabuada} + ${x} = ${(tabuada + x).toFixed(2)} <br>`
         }
         
     }
@@ -225,7 +279,7 @@ function algoPar() {
       result.innerHTML = "<h3>SUBTRAÇÃO</h3>";
       for (let x = 1; x <= 10; x++) {
         
-         result.innerHTML += `${tabuada} - ${x} = ${tabuada - x} <br>`
+          result.innerHTML += `${tabuada} - ${x} = ${(tabuada - x).toFixed(2)} <br>`
         }
         
     }
@@ -238,7 +292,7 @@ function algoPar() {
       result.innerHTML = "<h3>MULTIPLICAÇÃO</h3>";
       for (let x = 1; x <= 10; x++) {
         
-         result.innerHTML += `${tabuada} * ${x} = ${tabuada * x} <br>`
+          result.innerHTML += `${tabuada} * ${x} = ${(tabuada * x).toFixed(2)} <br>`
         }
         
     }
