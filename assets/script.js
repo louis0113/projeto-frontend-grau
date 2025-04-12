@@ -5,7 +5,7 @@ function algoArea() {
 
     if (a > 0 && b > 0) {
         const area = a * b;
-        document.getElementById("resultArea").textContent = "Área do Retângulo: " + area;
+        document.getElementById("resultArea").textContent = "Área do Retângulo: " + area.toFixed(2) + " m²";
     } else {
         document.getElementById("resultArea").textContent = "Dados inválidos.";
     }
@@ -47,8 +47,8 @@ function algoFib() {
     if (n <= 0) {
         document.getElementById("resultFib").textContent = "Por favor, insira um número positivo.";
         return;
-    } else if (n >= 18){
-	document.getElementById("resultFib").innerHTML = "<p>O número é maior que desejado <br>Coloque um número entre 1 e 17!</p>";
+    } else if (n >= 15){
+	document.getElementById("resultFib").innerHTML = "<p>O número é maior que desejado <br>Coloque um número entre 1 e 14!</p>";
 
     } else {
 
@@ -140,9 +140,9 @@ function algoMedia() {
         return;
     }
 
-    const med = a + b + c /3;
+    const med = (a + b + c) /3;
 
-document.getElementById("resultMedia").textContent = `A media é ${med}.`;
+    document.getElementById("resultMedia").textContent = `A media é ${med.toFixed(2)}.`;
 }
 
 // Primo
@@ -177,14 +177,13 @@ function algoOrde() {
 
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
         document.getElementById("resultOrde1").textContent = "Dados inválidos.";
-    //     document.getElementById("resultOrde1").textContent = "";
+
         return;
     }
     let num = [a, b, c];
   
     let descending = [...num].sort((x, y) => y - x);
   
-    //document.getElementById("resultOrde").textContent = `Números em ordem decrescente: ${descending[0]}, ${descending[1]}, ${descending[2]}.`;
     document.getElementById("resultOrde1").textContent = `Números em ordem crescente: ${descending[2]}, ${descending[1]}, ${descending[0]}.`;
 }
 
@@ -204,57 +203,13 @@ function algoPar() {
       document.getElementById("resultPar").textContent = `O número ${i} é impar`;
     }
   }
-  
-// Tabuada
-// Tive que usar innerHTML ao inves de textContent aqui. Espero que isso não cause problemas.
-/* function algoTab() {
-    const tabuada = document.getElementById("tabuada").value;
-    const result = document.getElementById("resultTab");
-
-    result.innerHTML = "";
-
-    function operacao(sinal) {
-      result.innerHTML += `
-        <b>${sinal}</b><br>
-      `;
-    }
-
-    for (let y = 1; y <= 4; y++) {
-      if (y === 1) {
-        operacao("ADIÇÃO");
-      } else if (y === 2) {
-        operacao("SUBTRAÇÃO");
-      } else if (y === 3) {
-        operacao("MULTIPLICAÇÃO");
-      } else {
-        operacao("DIVISÃO");
-      }
-
-      for (let x = 1; x <= 10; x++) {
-        if (y === 1) {
-          result.innerHTML += `<div id="respostaTabuadaSub">
-
-          ${tabuada} + ${x} = ${tabuada + x}<br></div>`;
-        } else if (y === 2) {
-          result.innerHTML += `${tabuada} - ${x} = ${tabuada - x}<br>`;
-        } else if (y === 3) {
-          result.innerHTML += `${tabuada} * ${x} = ${tabuada * x}<br>`;
-        } else {
-          result.innerHTML += `${tabuada} / ${x} = ${Math.round(tabuada / x * 100) / 100}<br>`;
-        }
-      }
-      
-    }
-    
-  } */
-
     
     function tabAdd() {
       const tabuada = Number(document.getElementById("tabuada").value);
       const result = document.getElementById("tabAdd");
   
   
-      result.innerHTML = "";
+	result.innerHTML = "<h3>ADIÇÃO</h3>";
       for (let x = 1; x <= 10; x++) {
         
          result.innerHTML += `${tabuada} + ${x} = ${tabuada + x} <br>`
@@ -267,7 +222,7 @@ function algoPar() {
       const result = document.getElementById("tabSub");
   
   
-      result.innerHTML = "";
+      result.innerHTML = "<h3>SUBTRAÇÃO</h3>";
       for (let x = 1; x <= 10; x++) {
         
          result.innerHTML += `${tabuada} - ${x} = ${tabuada - x} <br>`
@@ -280,7 +235,7 @@ function algoPar() {
       const result = document.getElementById("tabMul");
   
   
-      result.innerHTML = "";
+      result.innerHTML = "<h3>MULTIPLICAÇÃO</h3>";
       for (let x = 1; x <= 10; x++) {
         
          result.innerHTML += `${tabuada} * ${x} = ${tabuada * x} <br>`
@@ -293,10 +248,10 @@ function algoPar() {
       const result = document.getElementById("tabDiv");
   
   
-      result.innerHTML = "";
+      result.innerHTML = "<h3>DIVISÃO</h3>";
       for (let x = 1; x <= 10; x++) {
         
-         result.innerHTML += `${tabuada} / ${x} = ${tabuada / x} <br>`
+          result.innerHTML += `${tabuada} / ${x} = ${(tabuada / x).toFixed(2)} <br>`
         }
         
     }
