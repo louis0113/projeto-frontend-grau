@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operações Matemáticas</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
-    <link href="../assets/calculator-svgrepo-com.svg" rel="icon"  type="image/x-icon"/>
+    <link href="../assets/calculator-svgrepo-com.svg" rel="icon"  type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-    
 
+ <body>
     <div class="container">
 
         <div class="corSecundaria">
@@ -20,8 +20,8 @@
 
                 <h1>Área de um retângulo</h1>
                 <form id="areaForm">
-                    <input class="input"type="number" id="length" placeholder="Digite a altura em metros" required><br><br>
-                    <input class="input"type="number" id="width" placeholder="Digite a largura em metros" required><br><br>
+                    <input class="input" type="number" id="length" placeholder="Digite a altura em metros" step="0.001" required><br><br>
+                    <input class="input" type="number" id="width" placeholder="Digite a largura em metros" step="0.001" required><br><br>
                     <button class="button2Input" type="button" onclick="algoArea()">Enviar</button>
                 </form>
                 <p id="resultArea" class="resposta"></p>
@@ -34,7 +34,7 @@
                 <h1>Calculadora de Fatorial</h1>
                 <form id="factorialForm">
                     <input class="input" type="number" id="numFat" placeholder="Digite um número" required><br><br>
-                    <button class="button1Input" type="button" onclick="algoFat()">Enviar</button>
+                    <button class="button1Input" id="btnFat" type="button" onclick="algoFat()">Enviar</button>
                 </form>
                 <p id="resultFat" class="resposta"></p>
             </div>
@@ -45,7 +45,7 @@
 
                 <h1>Calculadora Fibonacci</h1>
                 <form id="fibForm">
-                    <input class="input" type="number" id="numFib" placeholder="Digite um número" required><br><br>
+                    <input class="input" type="number" id="numFib" placeholder="Digite um número"  required><br><br>
                     <button class="button1Input" type="button" onclick="algoFib()">Enviar</button>
                 </form>
                 <p id="resultFib" class="resposta"></p>
@@ -58,7 +58,7 @@
 
                 <h1>Calculadora de Imposto</h1>
                 <form id="impostoForm">
-                    <input  class="input" type="number" id="salario" placeholder="Digite seu salário em reais" required><br><br>
+                    <input  class="input" type="number" id="salario" placeholder="Digite seu salário em reais" step="0.001" required><br><br>
                     <button class="button1Input" type="button" onclick="algoImposto()">Enviar</button>
                 </form>
                 <p id="resultImp" class="resposta"></p>
@@ -71,15 +71,15 @@
 
                 <h1>Cheque de Valor</h1>
                 <form id="maiorForm">
-                    <input class="input" type="number" id="numA" placeholder="Digite o primeiro valor" required><br><br>
-                    <input class="input" type="number" id="numB" placeholder="Digite o segundo valor" required><br><br>
-                    <input class="input" type="number" id="numC" placeholder="Digite o terceiro valor" required><br><br>
+                    <input class="input" type="number" id="numA" placeholder="Digite o primeiro valor" step="0.001" required><br><br>
+                    <input class="input" type="number" id="numB" placeholder="Digite o segundo valor" step="0.001" required><br><br>
+                    <input class="input" type="number" id="numC" placeholder="Digite o terceiro valor" step="0.001" required><br><br>
                     <button type="button" onclick="algoMaior()">Enviar</button>
                 </form>
                 <p id="resultMaior" class="resposta"></p>
             </div>
         </div>
-        <body>
+       
 
             <div class="menu-central">
                 <a href="https://louissqli.site" target="_blank">Inicio do Codigo</a>
@@ -91,9 +91,9 @@
             <div class="corPrimaria">
                 <h1>Calculadora de Média</h1>
                 <form id="mediaForm">
-                    <input class="input" type="number" id="medA" placeholder="Digite o primeiro valor" required><br><br>
-                    <input class="input" type="number" id="medB" placeholder="Digite o segundo valor" required><br><br>
-                    <input class="input" type="number" id="medC" placeholder="Digite o terceiro valor" required><br><br>
+                    <input class="input" type="number" id="medA" placeholder="Digite o primeiro valor" step="0.001" required><br><br>
+                    <input class="input" type="number" id="medB" placeholder="Digite o segundo valor" step="0.001" required><br><br>
+                    <input class="input" type="number" id="medC" placeholder="Digite o terceiro valor" step="0.001" required><br><br>
                     <button type="button" onclick="algoMedia()">Enviar</button>
                 </form>
                 <p id="resultMedia" class="resposta"></p>
@@ -118,9 +118,9 @@
 
                 <h1>Ordenação de valores</h1>
                 <form id="ordeForm">
-                    <input class="input" type="number" id="ordA" placeholder="Digite o primeiro valor" required><br><br>
-                    <input class="input" type="number" id="ordB" placeholder="Digite o segundo valor" required><br><br>
-                    <input class="input" type="number" id="ordC" placeholder="Digite o terceiro valor" required><br><br>
+                    <input class="input" type="number" id="ordA" placeholder="Digite o primeiro valor" step="0.001" required><br><br>
+                    <input class="input" type="number" id="ordB" placeholder="Digite o segundo valor" step="0.001" required><br><br>
+                    <input class="input" type="number" id="ordC" placeholder="Digite o terceiro valor" step="0.001" required><br><br>
                     <button type="button" onclick="algoOrde()">Enviar</button>
                 </form>
                 <div class="resposta">
@@ -147,12 +147,13 @@
 
                 <h1>Tabuada</h1>
                 <form id="tabForm">
-                    <input class="input" type="number" id="tabuada" placeholder="Digite um valor" required><br><br>
-                    <button class="button1Input" type="button" onclick="tabAdd(); tabSub(); tabMul(); tabDiv()">Enviar</button>
+                    <input class="input" type="number" id="tabuada" placeholder="Digite um valor" step="0.001" required><br><br>
+                    <button class="button1Input" type="button" onclick="mostrarTabuada()">Enviar</button>
 
                 </form>
 		
 		<div class="org">
+		  
                 <div id="tabAdd" class="respostaTabuada">
 		</div>
                 <div id="tabSub" class="respostaTabuada">
@@ -161,13 +162,12 @@
 		</div>
                 <div id="tabDiv" class="respostaTabuada">
 		</div>
+		
 		</div>
 		
             </div>
         </div>
-
     </div>
-</div>
 
     <script src="../assets/script.js"></script>
 
