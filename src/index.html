@@ -20,8 +20,8 @@
 
                 <h1>Área de um retângulo</h1>
                 <form id="areaForm">
-                    <input class="input"type="number" id="length" placeholder="Digite a altura" required><br><br>
-                    <input class="input"type="number" id="width" placeholder="Digite a largura" required><br><br>
+                    <input class="input"type="number" id="length" placeholder="Digite a altura em metros" required><br><br>
+                    <input class="input"type="number" id="width" placeholder="Digite a largura em metros" required><br><br>
                     <button class="button2Input" type="button" onclick="algoArea()">Enviar</button>
                 </form>
                 <p id="resultArea" class="resposta"></p>
@@ -58,7 +58,7 @@
 
                 <h1>Calculadora de Imposto</h1>
                 <form id="impostoForm">
-                    <input  class="input" type="number" id="salario" placeholder="Digite seu salário" required><br><br>
+                    <input  class="input" type="number" id="salario" placeholder="Digite seu salário em reais" required><br><br>
                     <button class="button1Input" type="button" onclick="algoImposto()">Enviar</button>
                 </form>
                 <p id="resultImp" class="resposta"></p>
@@ -151,6 +151,8 @@
                     <button class="button1Input" type="button" onclick="tabAdd(); tabSub(); tabMul(); tabDiv()">Enviar</button>
 
                 </form>
+		
+		<div class="org">
                 <div id="tabAdd" class="respostaTabuada">
 		</div>
                 <div id="tabSub" class="respostaTabuada">
@@ -159,23 +161,8 @@
 		</div>
                 <div id="tabDiv" class="respostaTabuada">
 		</div>
-        
-        <div id="resultTab" class="respostaTabuada">
 		</div>
-
-        <div id="respostaTabuadaSub">
-
-
-        </div>
-        <div id="respostaTabuadaMult">
-
-
-        </div>
-        <div id="respostaTabuadaDiv">
-
-            
-        </div>
-
+		
             </div>
         </div>
 
