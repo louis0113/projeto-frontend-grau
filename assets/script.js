@@ -2,7 +2,7 @@
 document.querySelectorAll("input[type='number']").forEach(input => {
     input.addEventListener("keypress", function (e) {
         const char = String.fromCharCode(e.which);
-        const regex = /[0-9.-]/
+        const regex = /[0-9.,-]/
         if (!regex.test(char)) {
             e.preventDefault();
         }
@@ -136,13 +136,13 @@ function algoImposto() {
     let p4 = n * a_4;
 
     if (n >= 2259.21 && n <= 2836.65) {
-        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$" + p1;
+        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$" + p1.toFixed(2);
     } else if (n > 2836.65 && n <= 3751.05) {
-        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$" + p2;
+        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$" + p2.toFixed(2);
     } else if (n > 3751.05 && n <= 4664.68) {
-        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$" + p3;
+        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$" + p3.toFixed(2);
     } else if (n > 4664.68) {
-        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$ " + p4;
+        document.getElementById("resultImp").textContent = "Parcela a deduzir será igual a: R$ " + p4.toFixed(2);
     } else if (n >= 0 && n < 2259.21) {
         document.getElementById("resultImp").textContent = "Você está isento de pagar imposto de renda.";
     }
