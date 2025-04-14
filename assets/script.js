@@ -1,6 +1,5 @@
-
 document.querySelectorAll("input[type='number']").forEach(input => {
-    input.addEventListener("keypress", function (e) {
+    input.addEventListener("keypress", function(e) {
         const char = String.fromCharCode(e.which);
         const regex = /[0-9.,-]/
         if (!regex.test(char)) {
@@ -11,7 +10,7 @@ document.querySelectorAll("input[type='number']").forEach(input => {
 
 
 document.querySelectorAll("form").forEach(form => {
-    form.addEventListener("keydown", function (event) {
+    form.addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             event.preventDefault();
             const button = form.querySelector("button[type='button']");
@@ -40,7 +39,7 @@ function mostrarTabuada() {
     });
 }
 
-window.onload = function () {
+window.onload = function() {
     document.querySelectorAll('.respostaTabuada').forEach(div => {
         div.style.display = 'none';
     });
@@ -49,7 +48,7 @@ window.onload = function () {
 
 // Area
 function algoArea() {
-       
+
     const a = document.getElementById("length").value;
     const b = document.getElementById("width").value;
 
@@ -64,14 +63,14 @@ function algoArea() {
 
 // Fatorial
 function algoFat() {
-       
+
     const numInput = document.getElementById("numFat").value;
     const number = parseInt(numInput);
-    
+
     if (!numInput || isNaN(number)) {
         document.getElementById("resultFat").textContent = "Dados Inválidos";
         return;
-   }
+    }
 
     if (number < 0) {
         document.getElementById("resultFat").textContent = "O fatorial não está definido para números negativos.";
@@ -82,7 +81,7 @@ function algoFat() {
 
     for (let i = 2; i <= number; i++) {
         factorial *= i;
-     }
+    }
 
     document.getElementById("resultFat").textContent = "O fatorial de " + number + " é: " + factorial;
 }
@@ -95,22 +94,22 @@ function algoFib() {
         document.getElementById("resultFib").textContent = "Dados inválidos.";
         return;
     }
-    
+
     if (n <= 0) {
         document.getElementById("resultFib").textContent = "Por favor, insira um número positivo.";
         return;
-    } else if (n >= 15){
-	document.getElementById("resultFib").innerHTML = "<p>O número é maior que desejado <br>Coloque um número entre 1 e 14!</p>";
+    } else if (n >= 15) {
+        document.getElementById("resultFib").innerHTML = "<p>O número é maior que desejado <br>Coloque um número entre 1 e 14!</p>";
 
     } else {
 
-    let fibonacci = [0, 1]; 
+        let fibonacci = [0, 1];
 
-    for (let i = 2; i < n; i++) {
-        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-    }
+        for (let i = 2; i < n; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        }
 
-	document.getElementById("resultFib").textContent = fibonacci.slice(0, n);
+        document.getElementById("resultFib").textContent = fibonacci.slice(0, n);
 
     }
 }
@@ -160,7 +159,7 @@ function algoMaior() {
 
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
         document.getElementById("resultMaior").textContent = "Dados inválidos.";
-        return; 
+        return;
     }
 
     if (a > b && a > c) {
@@ -193,7 +192,7 @@ function algoMedia() {
         return;
     }
 
-    const med = (a + b + c) /3;
+    const med = (a + b + c) / 3;
 
     document.getElementById("resultMedia").textContent = `A media é ${med.toFixed(2)}.`;
 }
@@ -206,21 +205,21 @@ function algoPrimo() {
         document.getElementById("resultPrimo").textContent = "Dados inválidos.";
         return;
     }
-  
+
     if (n <= 1) {
-      document.getElementById("resultPrimo").textContent = `${n} não é um número primo.`;
-      return; 
+        document.getElementById("resultPrimo").textContent = `${n} não é um número primo.`;
+        return;
     }
 
     for (let i = 2; i <= Math.sqrt(n); i++) {
-      if (n % i === 0) {
-        document.getElementById("resultPrimo").textContent = `${n} não é um número primo.`;
-        return; 
-      }
+        if (n % i === 0) {
+            document.getElementById("resultPrimo").textContent = `${n} não é um número primo.`;
+            return;
+        }
     }
 
     document.getElementById("resultPrimo").textContent = `${n} é um número primo.`;
-  }
+}
 
 // Ordenação
 function algoOrde() {
@@ -234,9 +233,9 @@ function algoOrde() {
         return;
     }
     let num = [a, b, c];
-  
+
     let descending = [...num].sort((x, y) => y - x);
-  
+
     document.getElementById("resultOrde1").textContent = `Números em ordem crescente: ${descending[2]}, ${descending[1]}, ${descending[0]}.`;
 }
 
@@ -246,68 +245,66 @@ function algoPar() {
     const n = document.getElementById("numPar").value;
 
     if (n <= 0) {
-      document.getElementById("resultPar").textContent = "Dados inválidos.";
-      return;
+        document.getElementById("resultPar").textContent = "Dados inválidos.";
+        return;
     }
 
     const i = parseFloat(n);
     if (i % 2 === 0) {
-      document.getElementById("resultPar").textContent = `O número ${i} é par`;
+        document.getElementById("resultPar").textContent = `O número ${i} é par`;
     } else {
-      document.getElementById("resultPar").textContent = `O número ${i} é impar`;
+        document.getElementById("resultPar").textContent = `O número ${i} é impar`;
     }
 }
 
-    function tabAdd() {
-      const tabuada = Number(document.getElementById("tabuada").value);
-      const result = document.getElementById("tabAdd");
-  
-  
-	result.innerHTML = "<h3>ADIÇÃO</h3>";
-      for (let x = 1; x <= 10; x++) {
-        
-          result.innerHTML += `${tabuada} + ${x} = ${(tabuada + x).toFixed(2)} <br>`
-        }
-        
+function tabAdd() {
+    const tabuada = Number(document.getElementById("tabuada").value);
+    const result = document.getElementById("tabAdd");
+
+
+    result.innerHTML = "<h3>ADIÇÃO</h3>";
+    for (let x = 1; x <= 10; x++) {
+
+        result.innerHTML += `${tabuada} + ${x} = ${(tabuada + x).toFixed(2)} <br>`
     }
-  
-    function tabSub() {
-      const tabuada = Number(document.getElementById("tabuada").value);
-      const result = document.getElementById("tabSub");
-  
-  
-      result.innerHTML = "<h3>SUBTRAÇÃO</h3>";
-      for (let x = 1; x <= 10; x++) {
-        
-          result.innerHTML += `${tabuada} - ${x} = ${(tabuada - x).toFixed(2)} <br>`
-        }
-        
+
+}
+
+function tabSub() {
+    const tabuada = Number(document.getElementById("tabuada").value);
+    const result = document.getElementById("tabSub");
+
+
+    result.innerHTML = "<h3>SUBTRAÇÃO</h3>";
+    for (let x = 1; x <= 10; x++) {
+
+        result.innerHTML += `${tabuada} - ${x} = ${(tabuada - x).toFixed(2)} <br>`
     }
-    
-    function tabMul() {
-      const tabuada = Number(document.getElementById("tabuada").value);
-      const result = document.getElementById("tabMul");
-  
-  
-      result.innerHTML = "<h3>MULTIPLICAÇÃO</h3>";
-      for (let x = 1; x <= 10; x++) {
-        
-          result.innerHTML += `${tabuada} * ${x} = ${(tabuada * x).toFixed(2)} <br>`
-        }
-        
+
+}
+
+function tabMul() {
+    const tabuada = Number(document.getElementById("tabuada").value);
+    const result = document.getElementById("tabMul");
+
+
+    result.innerHTML = "<h3>MULTIPLICAÇÃO</h3>";
+    for (let x = 1; x <= 10; x++) {
+
+        result.innerHTML += `${tabuada} * ${x} = ${(tabuada * x).toFixed(2)} <br>`
     }
-  
-    function tabDiv() {
-      const tabuada = Number(document.getElementById("tabuada").value);
-      const result = document.getElementById("tabDiv");
-  
-  
-      result.innerHTML = "<h3>DIVISÃO</h3>";
-      for (let x = 1; x <= 10; x++) {
-        
-          result.innerHTML += `${tabuada} / ${x} = ${(tabuada / x).toFixed(2)} <br>`
-        }
-        
+
+}
+
+function tabDiv() {
+    const tabuada = Number(document.getElementById("tabuada").value);
+    const result = document.getElementById("tabDiv");
+
+
+    result.innerHTML = "<h3>DIVISÃO</h3>";
+    for (let x = 1; x <= 10; x++) {
+
+        result.innerHTML += `${tabuada} / ${x} = ${(tabuada / x).toFixed(2)} <br>`
     }
-  
-  
+
+}

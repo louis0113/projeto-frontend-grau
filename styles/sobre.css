@@ -1,0 +1,42 @@
+  body {
+      background-color: #1d1f21;
+      color: #f14e32;
+      font-family: 'Courier New', Courier, monospace;
+      cursor: url('../assets/cursorw.png') 16 16, auto;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+
+  }
+
+  h1,
+  h2 {
+      text-align: center;
+      margin-top: 0.2cm;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  p {
+      text-align: center;
+  }
+
+  section {
+      margin: auto;
+      background-color: #eef1ee;
+      border-radius: 30px;
+      max-width: 50rem;
+      min-width: 35rem;
+      color: #f14e32;
+      text-align: justify;
+      padding: 10px;
+      margin-top: 1cm;
+
+  }
+
+  section:hover {
+      cursor: url('../assets/cursor1.png') 16 16, auto;
+      background-color: #9b6666;
+      color: black;
+  }
