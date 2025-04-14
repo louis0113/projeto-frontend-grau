@@ -73,7 +73,7 @@ input[type=number] {
 
 
 button {
-    
+
     padding: 0.8em 1.8em;
     border: 2px solid #9b6666;
     position: relative;
@@ -154,18 +154,27 @@ p {
 
     /*Modifiquei a margin: 50px; para 40px, apaguei a margin0bottom:300; pq estava dando incopatibilidade com o cod margin e convertir o justify-content: center; para justify-content: flex-start; e usei o margin-left: -35cm; negativo para puxar a resposta pro meio*/
 
-    width: 94.6rem;
+    width: 100%;
     height: 315px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    
+    flex-direction: row;
+    justify-content: center;
+
+
 }
+
+.respostaTabuada:hover {
+
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+
+
 
 .respostaTabuada {
 
     font-family: 'Courier New', Courier, monospace;
-    flex: 1;
     width: 15rem;
     display: none;
     background-color: #9b6666;
@@ -179,7 +188,39 @@ p {
     color: #222e2c;
     text-align: center;
     z-index: 1;
+    transition: .5s ease;
 
+}
+
+@media (max-width: 768px) {
+
+
+    .org {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 450px;
+        gap: 40px;
+    }
+
+    .respostaTabuada {
+        margin: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+    .org {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 450px;
+        gap: 40px;
+
+    }
+
+    .respostaTabuada {
+        margin: auto;
+    }
 }
 
 
@@ -225,8 +266,8 @@ input {
     font-family: 'Bebas Neue';
     display: flex;
     justify-content: center;
+    flex-direction: row;
     /* Centraliza os itens horizontalmente */
-    align-items: center;
     /* Centraliza verticalmente */
     gap: 20px;
     /* Espaçamento entre os itens */
@@ -238,8 +279,17 @@ input {
     /* Reduz a margem externa */
     padding: 5px;
     /* Diminui o espaçamento interno */
-    
+
 }
+
+@media (max-width: 768px) {
+
+    .menu-central {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 .menu-central a {
 
