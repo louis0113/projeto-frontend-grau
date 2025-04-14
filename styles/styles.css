@@ -73,6 +73,7 @@ input[type=number] {
 
 
 button {
+    
     padding: 0.8em 1.8em;
     border: 2px solid #9b6666;
     position: relative;
@@ -86,7 +87,6 @@ button {
     font-family: inherit;
     color: #9b6666;
     border-radius: 30px;
-
     margin-top: -25px;
 }
 
@@ -159,7 +159,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
+    
 }
 
 .respostaTabuada {
@@ -238,6 +238,7 @@ input {
     /* Reduz a margem externa */
     padding: 5px;
     /* Diminui o espaçamento interno */
+    
 }
 
 .menu-central a {
@@ -253,6 +254,7 @@ input {
     /* Cor do fundo */
     border-radius: 23px;
     transition: 0.3s;
+    cursor: url('../assets/cursor1.png') 16 16, none;
 
 }
 
