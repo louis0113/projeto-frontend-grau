@@ -7,9 +7,7 @@ body {
     -webkit-user-select: none; 
     -moz-user-select: none; 
     -ms-user-select: none;
-    
   
-
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -29,7 +27,7 @@ input[type=number] {
     margin-top: 2%; /* Coloquei pra nao deixar a margem no topo grudando com o navegador*/
     
     display: flex;
-    gap: 35px;
+    gap: 0.4cm;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -151,13 +149,17 @@ p{
 
 
 .org{
+
+/*Modifiquei a margin: 50px; para 40px, apaguei a margin0bottom:300; pq estava dando incopatibilidade com o cod margin e convertir o justify-content: center; para justify-content: flex-start; e usei o margin-left: -35cm; negativo para puxar a resposta pro meio*/
+
   width: 500px;
   height: 250px;
-  margin: 50px;
-  margin-bottom: 300px;
+  margin: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  
+  margin-left: -35cm;
+  justify-content: flex-start;
 
 }
 
@@ -177,6 +179,7 @@ p{
     color: #222e2c;
     text-align: center;
     z-index: 1;
+    
 }
 
 
