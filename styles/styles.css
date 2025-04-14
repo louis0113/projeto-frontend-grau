@@ -3,29 +3,31 @@ body {
     background: #1d1f21;
     text-align: center;
     cursor: url('../assets/cursorw.png') 16 16, auto;
-    user-select: none; 
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
-  
+
 }
 
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
 
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 
 }
 
 input[type=number] {
     -moz-appearance: textfield;
-  }
+}
 
 
 .container {
 
-    margin-top: 2%; /* Coloquei pra nao deixar a margem no topo grudando com o navegador*/
-    
+    margin-top: 2%;
+    /* Coloquei pra nao deixar a margem no topo grudando com o navegador*/
+
     display: flex;
     gap: 0.4cm;
     justify-content: center;
@@ -35,11 +37,11 @@ input[type=number] {
 
 .corPrimaria {
 
-    
+
     margin-top: 2%;
     margin-left: 40%;
     height: 18em;
-   
+
     background-color: #eef1ee;
     max-width: 50em;
     margin-left: auto;
@@ -52,11 +54,11 @@ input[type=number] {
 }
 
 .corSecundaria {
-    
+
     height: 22em;
 
     /* Apagando a o margin-top: 10%; que tinha aqui, ele centralizou tranquilo, mas cortou a parte de cima dos cards, dai fui no .container e apaguei a margin-top: -8%; que tinha colocado e ele arrumou*/
-    
+
     width: 16em;
     border-radius: 30px;
     background-color: #9b6666;
@@ -66,11 +68,11 @@ input[type=number] {
     min-width: 350px;
     max-width: 300px;
     padding-top: -30px;
-	       
+
 }
 
 
-button{
+button {
     padding: 0.8em 1.8em;
     border: 2px solid #9b6666;
     position: relative;
@@ -84,17 +86,17 @@ button{
     font-family: inherit;
     color: #9b6666;
     border-radius: 30px;
-    
+
     margin-top: -25px;
 }
 
 .button1Input {
 
     margin-top: 4.50em;
-    
+
 }
 
-.button2Input{
+.button2Input {
 
     margin-top: 1.70em;
 }
@@ -116,7 +118,7 @@ button::before {
 }
 
 button:hover::before {
-    
+
     width: 105%;
 }
 
@@ -126,14 +128,14 @@ button:hover {
 
 }
 
-p{
+p {
     font-family: 'Courier New', Courier, monospace;
     color: #222e2c;
 
 }
 
 
-.resposta{
+.resposta {
     margin-top: 2.50em;
 
 }
@@ -148,23 +150,20 @@ p{
 
 
 
-.org{
+.org {
 
-/*Modifiquei a margin: 50px; para 40px, apaguei a margin0bottom:300; pq estava dando incopatibilidade com o cod margin e convertir o justify-content: center; para justify-content: flex-start; e usei o margin-left: -35cm; negativo para puxar a resposta pro meio*/
+    /*Modifiquei a margin: 50px; para 40px, apaguei a margin0bottom:300; pq estava dando incopatibilidade com o cod margin e convertir o justify-content: center; para justify-content: flex-start; e usei o margin-left: -35cm; negativo para puxar a resposta pro meio*/
 
-  width: 500px;
-  height: 250px;
-  margin: 40px;
-  display: flex;
-  align-items: center;
-  
-  margin-left: -35cm;
-  justify-content: flex-start;
+    width: 94.6rem;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
 }
 
 .respostaTabuada {
-    
+
     font-family: 'Courier New', Courier, monospace;
     flex: 1;
     width: 15rem;
@@ -172,14 +171,14 @@ p{
     float: left;
     height: 17rem;
     border-radius: 30px;
-    margin-top: 30%;
-    margin-right: 10%;
+    margin-top: 1em;
+    margin-right: 2.5%;
     min-width: 350px;
     max-width: 300px;
     color: #222e2c;
     text-align: center;
     z-index: 1;
-    
+
 }
 
 
@@ -199,7 +198,7 @@ input {
 
 }
 
-/* From Uiverse.io by cohencoo */ 
+/* From Uiverse.io by cohencoo */
 .input {
     cursor: url('../assets/cursor1.png') 16 16, auto;
     position: relative;
@@ -212,36 +211,45 @@ input {
     outline-offset: 3px;
     padding: 5px 2rem;
     transition: 0.15s;
-  }
-  
-  .input:focus {
+}
+
+.input:focus {
     outline-offset: 5px;
-   
-  }
-  
+
+}
+
 /* Aqui começa os codigos do menu*/
 
-  .menu-central {
+.menu-central {
     font-family: 'Bebas Neue';
-    display:flexbox;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre os itens */
-    position: relative; /* Garante que fique no layout */
-    width: 100%; /* Ocupa toda a largura */
-    margin: 10px auto; /* Reduz a margem externa */
-    padding: 5px; /* Diminui o espaçamento interno */
+    display: flexbox;
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+    position: relative;
+    /* Garante que fique no layout */
+    width: 100%;
+    /* Ocupa toda a largura */
+    margin: 10px auto;
+    /* Reduz a margem externa */
+    padding: 5px;
+    /* Diminui o espaçamento interno */
 }
 
 .menu-central a {
-    
+
     text-decoration: none;
-    color:#f14e32;
+    color: #f14e32;
     font-size: 36.5px;
     margin-right: 10px;
     font-weight: bold;
-    padding: 12px 20px; /* Reduz o tamanho dos botões */
-    background-color: #eef1ee; /* Cor do fundo */
+    padding: 12px 20px;
+    /* Reduz o tamanho dos botões */
+    background-color: #eef1ee;
+    /* Cor do fundo */
     border-radius: 23px;
     transition: 0.3s;
 
@@ -249,6 +257,6 @@ input {
 
 .menu-central a:hover {
     cursor: url('../assets/cursor1.png') 16 16, auto;
-    background-color: #874d47; /* Cor ao passar o mouse */
+    background-color: #874d47;
+    /* Cor ao passar o mouse */
 }
-
