@@ -37,6 +37,9 @@ function mostrarTabuada() {
     document.querySelectorAll('.respostaTabuada').forEach(div => {
         div.style.display = 'block';
     });
+
+    document.querySelector(".org").scrollIntoView({ behavior: "smooth" }); /*Aqui faz com que quando apertar o bortão de dar a resposta, a pagina desça sozinha*/
+
 }
 
 window.onload = function() {
