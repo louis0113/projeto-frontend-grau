@@ -38,7 +38,9 @@ function mostrarTabuada() {
         div.style.display = 'block';
     });
 
-    document.querySelector(".org").scrollIntoView({ behavior: "smooth" }); /*Aqui faz com que quando apertar o bortão de dar a resposta, a pagina desça sozinha*/
+    document.querySelector(".org").scrollIntoView({
+        behavior: "smooth"
+    }); /*Aqui faz com que quando apertar o bortão de dar a resposta, a pagina desça sozinha*/
 
 }
 
@@ -71,7 +73,7 @@ function algoFat() {
     const number = parseInt(numInput);
 
     if (!numInput || isNaN(number)) {
-        document.getElementById("resultFat").textContent = "Dados Inválidos";
+        document.getElementById("resultFat").textContent = "Dados Inválidos.";
         return;
     }
 
