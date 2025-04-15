@@ -128,6 +128,26 @@ button:hover {
 
 }
 
+@media (max-width: 1024px) {
+
+    button::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: #874d47;
+        transition: .5s ease;
+
+    }
+
+    button:active::before {
+        width: 105%;
+    }
+
+    button:active {
+        cursor: url('../assets/cursor1.png') 16 16, auto;
+        color: white;
+    }
+
+}
+
 p {
     font-family: 'Courier New', Courier, monospace;
     color: #222e2c;
@@ -145,6 +165,20 @@ p {
     transform: scale(1.1);
     z-index: 2;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+@media (max-width: 1024px) {
+    .corSecundaria:active {
+        transform: scale(1.1);
+        z-index: 2;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .corSecundadaria {
+        transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
+    }
 
 }
 
@@ -192,21 +226,6 @@ p {
 
 }
 
-@media (max-width: 768px) {
-
-
-    .org {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 450px;
-        gap: 40px;
-    }
-
-    .respostaTabuada {
-        margin: auto;
-    }
-}
-
 @media (max-width: 1024px) {
 
 
@@ -215,13 +234,20 @@ p {
         align-items: center;
         margin-top: 450px;
         gap: 40px;
-
     }
 
     .respostaTabuada {
         margin: auto;
+
     }
+
+    .respostaTabuada:active {
+        transform: scale(1.1);
+        transition: .5s ease;
+    }
+
 }
+
 
 
 h1 {
