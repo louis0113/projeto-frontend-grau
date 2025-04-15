@@ -35,6 +35,15 @@ input[type=number] {
     flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+    .container {
+        margin-top: 3rem;
+        gap: 40px;
+
+    }
+
+}
+
 .corPrimaria {
 
 
@@ -92,13 +101,13 @@ button {
 
 .button1Input {
 
-    margin-top: 4.50em;
+    margin-top: 5em;
 
 }
 
 .button2Input {
 
-    margin-top: 1.70em;
+    margin-top: 2em;
 }
 
 button::before {
@@ -233,6 +242,7 @@ p {
         flex-direction: column;
         align-items: center;
         margin-top: 450px;
+        margin-bottom: 475px;
         gap: 40px;
     }
 
