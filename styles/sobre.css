@@ -17,7 +17,7 @@
 
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
       .container {
           flex-direction: column;
           align-items: center;
@@ -59,12 +59,19 @@
       color: black;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
       section {
           max-width: 25rem;
           min-width: 17.5rem;
           margin: auto;
+      }
 
+      section:active {
+          cursor: url('../assets/cursor1.png') 16 16, auto;
+          background-color: #9b6666;
+          color: black;
 
       }
+
+
   }
