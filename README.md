@@ -1,4 +1,4 @@
-# projeto-frontend-grau
+# Projeto MathOps
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/louis0113/projeto-frontend-grau?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/louis0113/projeto-frontend-grau?style=for-the-badge)
@@ -16,10 +16,10 @@
 <hr>
 
 <div align="center">
-<h3>Imagem da Tela Inicial</h3><br><br>
+<h3>Tela Inicial do MathOps</h3><br><br>
 <img src="assets/tela1.png" alt="Tela Inicial Site">
 <br>
-<h3>Tela do Sobre</h3><br><br>
+<h3>Sobre do MathOps</h3><br><br>
 <img src="assets/tela2.png" alt="Tela sobre o site ">
 </div>
 
@@ -29,7 +29,7 @@
 
  Vamos resolver seus problemas em relação a terrível e infame matemática com as seguintes funcionalidades:
  
- - Suporta Aritmética Básica
+ - Aritmética Básica
  - Equações
  - Matemática Financeira
  - Geometria
@@ -64,13 +64,13 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ## 🚀 Acessando o nosso site :) 
 
-Acessar nosso site é extremamente facil :)
+Acessar o MathOps é extremamente facil :)
 
-[Link do Projeto Operações Matemáticas](https://louis0113.github.io/projeto-frontend-grau/src/index.html)
+[Link do Projeto MathOps](https://mathops.fun)
 
-## 📫 Contribuindo para o projeto-frontend-grau
+## 📫 Contribuindo para o MathOps
 
-Para contribuir com **projeto-frontend-grau** , siga estas etapas:
+Para contribuir com **MathOps** , siga estas etapas:
 
 1. Clone o repositório: `git clone <link-do-repo-remoto>`
 2. Crie uma branch: `git checkout -b <nome_branch>`.
