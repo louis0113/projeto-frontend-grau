@@ -66,7 +66,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Acessar nosso site é extremamente facil :)
 
-[Link do Projeto-Tabuada](https://louis0113.github.io/projeto-frontend-grau/src/index.html)
+[Link do Projeto Operações Matemáticas](https://louis0113.github.io/projeto-frontend-grau/src/index.html)
 
 ## 📫 Contribuindo para o projeto-frontend-grau
 
