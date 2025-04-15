@@ -18,6 +18,9 @@
 <div align="center">
 <h3>Imagem da Tela Inicial</h3><br><br>
 <img src="assets/tela1.png" alt="Tela Inicial Site">
+<br>
+<h3>Tela do Sobre</h3><br><br>
+<img src="assets/tela2.png" alt="Tela sobre o site ">
 </div>
 
 <hr>
@@ -63,7 +66,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Acessar nosso site é extremamente facil :)
 
-[Link do Projeto-Tabuada](https://louissqli.site)
+[Link do Projeto Operações Matemáticas](https://louis0113.github.io/projeto-frontend-grau/src/index.html)
 
 ## 📫 Contribuindo para o projeto-frontend-grau
 
