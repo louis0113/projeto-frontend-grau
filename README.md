@@ -68,9 +68,11 @@ Acessar o MathOps é extremamente facil :)
 
 [Link do Projeto MathOps](https://mathops.fun)
 
-Tá no celular e tá com preguiça? Relaxa temos um QR Code para você entrar no site apenas aponte sua camêra no **QR Code** abaixo:
-
-![QR Code MathOps](assets/qr-code.png)
+<div align="center">
+<h3>Tá no celular e tá com preguiça?</h3> 
+<h4>Relaxa temos um QR Code para você entrar no site apenas aponte sua camêra no <strong>QR Code</strong> abaixo:</h4>
+<img src="assets/qr-code.png" width="500px" height="500px" title="QR Code MathOps" alt="Apenas um simples QR Code"/>
+</div>
 
 ## 📫 Contribuindo para o MathOps
 
