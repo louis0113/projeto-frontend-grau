@@ -66,7 +66,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Acessar o MathOps é extremamente facil :)
 
-[Link do Projeto MathOps](https://mathops.fun)
+[Link do Projeto MathOps](https://louis0113.github.io/projeto-frontend-grau/)
 
 <div align="center">
 <h3>Tá no celular e tá com preguiça?</h3> 
